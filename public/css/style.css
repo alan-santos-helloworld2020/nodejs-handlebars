@@ -1,0 +1,10 @@
+nav{
+    border-bottom: 2px solid rgb(32, 138, 32);
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    padding: 5px;
+}
