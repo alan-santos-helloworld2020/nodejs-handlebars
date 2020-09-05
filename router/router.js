@@ -3,6 +3,7 @@ const router = express.Router();
 const cnx = require('../controller/controller');
 
 
+
 router.get('/', cnx.home);
 
 router.get('/produtos', cnx.produtos);

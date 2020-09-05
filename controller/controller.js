@@ -1,14 +1,20 @@
+var moment = require('moment');
+var datahoje = moment().format("DD/MM/YYYY");
+
 class Conexao{
 
     constructor(){
 
-        this.title = "home"
+        this.title = "home";
+       
 
     }
     home(req,res){
- 
+
         res.render('home',{
-            title:"Home"
+            title:"Home",
+            data:datahoje
+            
         });
             
     };
