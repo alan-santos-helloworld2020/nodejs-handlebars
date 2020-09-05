@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/materialize/dist/css/materialize.min.css">
-    <script src="/materialize/dist/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Onload-{{title}}</title>
 </head>
 
 <body>
     {{{body}}}
+
+    <script src="/materialize/dist/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var sidenav = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(sidenav,{
+                edge:"left"
+            });
+        });
+    </script>
 </body>
+
 
 </html>
